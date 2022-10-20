@@ -7,7 +7,11 @@
 </div>
 
     <table>
-
+        <tr>
+            <td>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td>
+            <td> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+        </tr>
     </table>
 
 </asp:Content>
