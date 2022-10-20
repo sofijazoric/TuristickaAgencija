@@ -3,12 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Prikaz podataka</h2>
 
-    <table>
-        <tr>
-            <td> </td>
-            <td> </td>
-        </tr>
-    </table>
-
+    <asp:Label ID="lblPrikaz" runat="server" Text="Selektujte grad: "></asp:Label>
+    <asp:DropDownList ID="ddlMesto" runat="server"> </asp:DropDownList>
 
 </asp:Content>

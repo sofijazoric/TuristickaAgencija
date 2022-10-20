@@ -11,6 +11,10 @@ namespace TuristickaAgencija
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ddlMesto.Items.Add("");
+            ddlMesto.Items.Add("Novi Sad");
+            ddlMesto.Items.Add("");
+            ddlMesto.Items.Add("");
 
         }
     }
