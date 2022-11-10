@@ -23,24 +23,6 @@ namespace TuristickaAgencija
        
         public Putnik() { }
 
-        public void Prikaz(ParametriZaPretragu parametri)
-        {
-            string SQLSelect = "Select * from Putnik where JMBG = '" + parametri.JMBG + "'";
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = Connection.conString;
-
-            SqlCommand cmd = new SqlCommand(SQLSelect, con);
-            SqlDataReader reader;
-
-            using(con)
-            {
-                try
-                {
-                    con.Open();
-                    reader = cmd.ExecuteReader();
-                    reader.Read()
-                }
-            }
-        }
+        
     }
 }
