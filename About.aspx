@@ -3,7 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Prikaz podataka</h2>
 
-    <asp:Label ID="lblPrikaz" runat="server" Text="Selektujte grad: "></asp:Label>
-    <asp:DropDownList ID="ddlMesto" runat="server"> </asp:DropDownList>
+    <p> Unesite JMBG putnika: </p>
+    <asp:TextBox ID="txtJMBG" runat="server"> </asp:TextBox>
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 
 </asp:Content>
