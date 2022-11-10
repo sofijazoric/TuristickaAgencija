@@ -30,7 +30,9 @@ namespace TuristickaAgencija
             con.ConnectionString = Connection.conString;
 
             SqlCommand cmd = new SqlCommand(SQLSelect, con);
+            con.Open();
             cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
