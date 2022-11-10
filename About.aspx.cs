@@ -14,6 +14,10 @@ namespace TuristickaAgencija
 
         }
 
-
+        protected void btnTrazi_Click(object sender, EventArgs e)
+        {
+            ParametriZaPretragu parametri = new ParametriZaPretragu();
+            parametri.JMBG = txtJMBG.Text;
+        }
     }
 }
