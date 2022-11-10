@@ -19,20 +19,10 @@ namespace TuristickaAgencija
         {
             ParametriZaPretragu parametri = new ParametriZaPretragu();
             parametri.JMBG = txtJMBG.Text;
-            Prikaz(parametri);
+           
         }
 
 
-        public void Prikaz(ParametriZaPretragu parametri)
-        {
-            string SQLSelect = "Select * from Putnik where JMBG = '" + parametri.JMBG + "'";
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = Connection.conString;
-
-            SqlCommand cmd = new SqlCommand(SQLSelect, con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
+        
     }
 }
