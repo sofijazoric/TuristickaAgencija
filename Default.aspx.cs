@@ -44,7 +44,7 @@ namespace TuristickaAgencija
                 }
                 catch (System.Data.SqlClient.SqlException ex)
                 {
-                    Console.WriteLine(ex);
+                    Console.WriteLine("IDIDIDIDI");
                 }
 
 

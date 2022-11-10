@@ -6,6 +6,6 @@
     <p> Unesite JMBG putnika: </p>
     <asp:TextBox ID="txtJMBG" runat="server"> </asp:TextBox>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TuristickaAgencijaConnectionString %>" SelectCommand="SELECT * FROM [Mesto]"></asp:SqlDataSource>
 
 </asp:Content>
