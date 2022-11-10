@@ -8,16 +8,16 @@
 
     <table>
         <tr>
-            <td> <asp:Label ID="lblJMBG" runat="server" Text="Label"></asp:Label> </td>
-            <td> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+            <td> <asp:Label ID="lblJMBG" runat="server" Text="Unesite JMBG:"></asp:Label> </td>
+            <td> <asp:TextBox ID="txtJMBG" runat="server"></asp:TextBox></td>
         </tr>
         <tr>
-            <td> <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label> </td>
-            <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+            <td> <asp:Label ID="lblIme" runat="server" Text="Unesite ime:"></asp:Label> </td>
+            <td> <asp:TextBox ID="txtIme" runat="server"></asp:TextBox></td>
         </tr>
         <tr>
-            <td> <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label> </td>
-            <td> <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+            <td> <asp:Label ID="lblPrezime" runat="server" Text="Unesite prezime:"></asp:Label> </td>
+            <td> <asp:TextBox ID="txtPrezime" runat="server"></asp:TextBox></td>
         </tr>
 
     </table>
