@@ -39,7 +39,7 @@ namespace TuristickaAgencija
                         int dodat = cmd.ExecuteNonQuery();
                       
                     }
-
+                    lblMessage.Text = "Proslo";
 
                 }catch(Exception ex)
                 {
