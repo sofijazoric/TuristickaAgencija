@@ -11,6 +11,13 @@ namespace TuristickaAgencija
         public ParametriZaPretragu()
         {
             JMBG = "";
+
+
+
+
+
+
+
         }
     }
 }
