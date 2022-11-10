@@ -38,7 +38,7 @@ namespace TuristickaAgencija
                 {
                     con.Open();
                     reader = cmd.ExecuteReader();
-                    reader.Read();
+                    reader.Read()
                 }
             }
         }
