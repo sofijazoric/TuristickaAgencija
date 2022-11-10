@@ -7,7 +7,7 @@ namespace TuristickaAgencija
 {
     public class Connection
     {
-        public static string conString = @"Data Source=DESKTOP-E8G5OPQ\sqlexpress;Initial Catalog=TurislickaAgencija;Integrated Security=True";
+        public static string conString = @"Data Source=.\SQLEXPRESS;Initial Catalog = TuristickaAgencija; Integrated Security = True";
 
     }
 }
