@@ -28,7 +28,7 @@ namespace TuristickaAgencija
                 {
                     con.Open();
 
-                    string cmdInsert = "Insert Into putnik Values(@JMBG, @Ime, @Prezime)";
+                    string cmdInsert = "Insert Into putnik (JMBG, Ime, Prezime) Values(@JMBG, @Ime, @Prezime)";
 
                     using (SqlCommand cmd = new SqlCommand(cmdInsert, con))
                     {
