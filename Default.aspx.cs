@@ -23,9 +23,9 @@ namespace TuristickaAgencija
             string SqlInsert;
             SqlInsert = "INSERT INTO Putnik ( JMBG, Ime, Prezime)";
             SqlInsert += "VALUES ('";
+            SqlInsert += txtJMBG.Text + "','";
             SqlInsert += txtIme.Text + "','";
-            SqlInsert += txtPrezime.Text + "','";
-            SqlInsert += txtJMBG.Text + "')'";
+            SqlInsert += txtPrezime.Text + "')";
 
 
 
