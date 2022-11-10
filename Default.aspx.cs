@@ -20,35 +20,35 @@ namespace TuristickaAgencija
 
         protected void btnUnesi_Click(object sender, EventArgs e)
         {
-            string SqlInsert;
-            SqlInsert = "INSERT INTO Putnik ( JMBG, Ime, Prezime)";
-            SqlInsert += "VALUES ('";
-            SqlInsert += txtJMBG.Text + "','";
-            SqlInsert += txtIme.Text + "','";
-            SqlInsert += txtPrezime.Text + "')";
 
+            using (SqlConnection con = new SqlConnection(Connection.conString))
 
-
-            SqlConnection con = new SqlConnection(Connection.conString);
-            SqlCommand cmd = new SqlCommand(SqlInsert, con);
-            int dodat = 0;
-            using (con)
             {
-
                 try
                 {
                     con.Open();
-                    dodat = cmd.ExecuteNonQuery();
-                    lblMessage.Text = dodat + " rekorda ubačeno u bazu";
-                    con.Close();
-                }
-                catch (System.Data.SqlClient.SqlException ex)
-                {
-                    Console.WriteLine("IDIDIDIDI");
-                }
 
+                    string cmdInsert = "Inesrt Into putnik Values(@JMBG, @Ime, @Prezime)";
+
+                    using (SqlCommand cmd = new SqlCommand(cmdInsert, con))
+                    {
+                        cmd.Parameters.AddWithValue("@JMBG", txtJMBG.Text);
+                        cmd.Parameters.AddWithValue("@Ime", txtIme.Text);
+                        cmd.Parameters.AddWithValue("@Prezime", txtPrezime.Text);
+
+                        int dodat = cmd.ExecuteNonQuery();
+                      
+                    }
+
+
+                }catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+
+                }
 
             }
+              
         }
     }
 }
