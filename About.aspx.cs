@@ -19,6 +19,7 @@ namespace TuristickaAgencija
         {
             ParametriZaPretragu parametri = new ParametriZaPretragu();
             parametri.JMBG = txtJMBG.Text;
+            Prikaz(parametri);
         }
 
 
