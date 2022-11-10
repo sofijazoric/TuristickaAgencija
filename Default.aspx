@@ -21,6 +21,7 @@
         </tr>
 
     </table>
+    <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
     <asp:Button ID="btnUnesi" runat="server" Text="Unesi" OnClick="btnUnesi_Click" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TuristickaAgencijaConnectionString %>" SelectCommand="SELECT * FROM [Putnik]"></asp:SqlDataSource>
 </asp:Content>

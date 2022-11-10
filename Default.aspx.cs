@@ -39,7 +39,7 @@ namespace TuristickaAgencija
                 {
                     con.Open();
                     dodat = cmd.ExecuteNonQuery();
-
+                    lblMessage.Text = dodat + " rekorda ubačeno u bazu";
                     con.Close();
                 }
                 catch (System.Data.SqlClient.SqlException ex)
