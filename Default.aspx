@@ -2,11 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="text-align: center;">
         <h1>Turisticka agencija</h1>
 </div>
-
-    <table>
+    <div style="text-align: center;">
+        <table style="text-align: center;">
         <tr>
             <td> <asp:Label ID="lblJMBG" runat="server" Text="Unesite JMBG:"></asp:Label> </td>
             <td> <asp:TextBox ID="txtJMBG" runat="server"></asp:TextBox></td>
@@ -24,5 +24,6 @@
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
     <asp:Button ID="btnUnesi" runat="server" Text="Unesi" OnClick="btnUnesi_Click" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TuristickaAgencijaConnectionString %>" SelectCommand="SELECT * FROM [Putnik]"></asp:SqlDataSource>
+        </div>
 </asp:Content>
 

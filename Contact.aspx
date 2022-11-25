@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TuristickaAgencija.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div style="text-align: center;">
     <h1>Prikaz mesta</h1>
 
     
@@ -10,7 +11,7 @@
     <asp:Button ID="btnTrazi" runat="server" Text="Trazi" OnClick="btnTrazi_Click" />
     <br /> <br />
 
-    <table>
+    <table style="text-align: center;">
         <tr>
             <td>Ime: </td>
             <td> <asp:Label ID="lblIme" runat="server" Text=""></asp:Label></td>
@@ -27,5 +28,5 @@
             <td>Datum dolaska:  </td>
             <td> <asp:Label ID="lblDolazak" runat="server" Text=""></asp:Label></td>
         </tr>
-    </table>
+    </table></div>
 </asp:Content>

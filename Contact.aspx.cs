@@ -35,7 +35,7 @@ namespace TuristickaAgencija
         {
             using (SqlConnection conn = new SqlConnection(Connection.conString))
             {
-                conn.Open();
+                onn.Open();
                 string cmdSelect = "SELECT * from Mesto join Putuje on Mesto.IdMesto = Putuje.IdMesto join Putnik on Putnik.JMBG = Putuje.JMBG where Mesto.Grad = '" + grad + "'";
 
                 using(SqlCommand cmd = new SqlCommand(cmdSelect, conn))
