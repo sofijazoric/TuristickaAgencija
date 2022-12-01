@@ -1,0 +1,22 @@
+﻿body {
+    background-color: darkseagreen;
+}
+
+h1 {
+    font-style: italic;
+
+}
+
+
+.jumbotron {
+    background-image: url('Images/airplane-g911ef3f9d_1921.jpg');
+    background-size: cover;
+}
+#MainContent_btnUnesi {
+    float: left;
+}
+
+.boja {
+    color: white;
+    margin-left: 3px;
+}

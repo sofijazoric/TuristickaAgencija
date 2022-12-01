@@ -47,6 +47,10 @@ namespace TuristickaAgencija
 
                 }
 
+                txtIme.Text = "";
+                txtPrezime.Text = "";
+                txtJMBG.Text = "";
+
             }
               
         }

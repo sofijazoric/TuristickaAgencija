@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
+    <link href="style.css" rel="stylesheet" />
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -51,8 +52,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Unos</a></li>
-                        <li><a runat="server" href="~/About">Prikaz</a></li>
-                        <li><a runat="server" href="~/Contact">JMBG Prikaz</a></li>
+                        <li><a runat="server" href="~/About">JMBG Prikaz</a></li>
+                        <li><a runat="server" href="~/Contact">Prikaz</a></li>
                     </ul>
                 </div>
             </div>

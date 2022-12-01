@@ -12,7 +12,10 @@
     <br />
 
     Ime: <asp:Label ID="lblIme" runat="server" Text=""></asp:Label>
+        <br />
     Prezime: <asp:Label ID="lblPrezime" runat="server" Text=""></asp:Label>
+
+        <link href="style.css" rel="stylesheet" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TuristickaAgencijaConnectionString %>" SelectCommand="SELECT * FROM [Mesto]"></asp:SqlDataSource>
         </div>
 </asp:Content>

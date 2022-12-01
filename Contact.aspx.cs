@@ -25,7 +25,6 @@ namespace TuristickaAgencija
         protected void btnTrazi_Click(object sender, EventArgs e)
         {
             string trazenigrad = ddlMesto.SelectedValue;
-            lblIme.Text = trazenigrad;
             Fill(trazenigrad);
 
 
@@ -35,7 +34,7 @@ namespace TuristickaAgencija
         {
             using (SqlConnection conn = new SqlConnection(Connection.conString))
             {
-                onn.Open();
+                conn.Open();
                 string cmdSelect = "SELECT * from Mesto join Putuje on Mesto.IdMesto = Putuje.IdMesto join Putnik on Putnik.JMBG = Putuje.JMBG where Mesto.Grad = '" + grad + "'";
 
                 using(SqlCommand cmd = new SqlCommand(cmdSelect, conn))

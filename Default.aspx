@@ -19,11 +19,16 @@
             <td> <asp:Label ID="lblPrezime" runat="server" Text="Unesite prezime:"></asp:Label> </td>
             <td> <asp:TextBox ID="txtPrezime" runat="server"></asp:TextBox></td>
         </tr>
+            <tr>
+                <td> </td>
+                <td>
+    <asp:Button ID="btnUnesi" runat="server" Text="Unesi" OnClick="btnUnesi_Click" /></td>
+            </tr>
 
     </table>
     <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
-    <asp:Button ID="btnUnesi" runat="server" Text="Unesi" OnClick="btnUnesi_Click" />
+        <br /> 
+        <link href="style.css" rel="stylesheet" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TuristickaAgencijaConnectionString %>" SelectCommand="SELECT * FROM [Putnik]"></asp:SqlDataSource>
         </div>
 </asp:Content>
-
